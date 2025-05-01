@@ -44,3 +44,7 @@ a:hover {
   color: gray;
   font-size: 50%;
 }
+.img{
+  width: 150px;
+  height: 150px;
+}
