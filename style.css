@@ -23,13 +23,6 @@ a {
 
 a:hover {
   background-color: #333333;
-  padding: 4px 20px 4px 20px;
-  border: solid 1px #191919;
-  border-radius: 5px;
-  color: white;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  display: inline-block;
 }
 .pfp{
   width: 150px;
@@ -47,4 +40,14 @@ a:hover {
 .img{
   width: 150px;
   height: 150px;
+  border-radius: 10px;
+}
+.imgb{
+  padding: 10px;
+  border-radius: 10px;
+}
+.detail{
+  opacity: 50%;
+  transform: translateY(-11px);
+  padding-bottom: 0px;
 }
