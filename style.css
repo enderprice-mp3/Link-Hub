@@ -2,58 +2,67 @@ html {
   height: 100%;
   width: 100%;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-}
 body {
+  min-height: 100vh;
+  margin: 0;
   font-family: Helvetica;
-  background-image: linear-gradient(to top, #0e0e0e, #333333);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: white;
   text-align: center;
   text-shadow: 0 0 12px #000000;
-  margin-top: 25px;
-  min-height: 100vh;
+  background: linear-gradient(-45deg, #0e0e0e, #1c1c1c, #333333, #1c1c1c);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 a {
   background-color: #292929;
-  padding: 4px 20px 4px 20px;
+  padding: 4px 20px;
   border: solid 1px #191919;
   border-radius: 5px;
   color: white;
   margin-top: 5px;
   margin-bottom: 5px;
   display: inline-block;
+  text-decoration: none;
 }
 
 a:hover {
   background-color: #333333;
 }
-.pfp{
+.pfp {
   width: 150px;
   height: 150px;
   border-radius: 75px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4); /* Adds soft shadow */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4); /* Adds soft shadow */
 }
-.bl{
+.bl {
   margin-bottom: 20px;
 }
-.footer{
+.footer {
   color: gray;
   font-size: 50%;
+  margin-top: 75px;
 }
-.img{
+.img {
   width: 150px;
   height: 150px;
   border-radius: 10px;
 }
-.imgb{
+.imgb {
   padding: 10px;
   border-radius: 10px;
 }
-.detail{
+.detail {
   opacity: 50%;
   transform: translateY(-11px);
   padding-bottom: 0px;
