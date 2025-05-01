@@ -2,13 +2,20 @@ html {
   height: 100%;
   width: 100%;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 body {
   font-family: Helvetica;
   background-image: linear-gradient(to top, #0e0e0e, #333333);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   text-align: center;
   text-shadow: 0 0 12px #000000;
   margin-top: 25px;
+  min-height: 100vh;
 }
 a {
   background-color: #292929;
